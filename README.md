@@ -15,6 +15,7 @@ SELECT
   month, year,
   avg(AveragePrice) AveragePrice,
   case
+  
     when month = 1 then "january"
     
     when month = 2 then "febuary"
@@ -54,6 +55,7 @@ SELECT
   month, year,
   sum(small_bags +large_bags + XLarge_Bags) as sales_per_month,
   case
+  
     when month = 1 then "january"
     
     when month = 2 then "febuary"
@@ -77,6 +79,7 @@ SELECT
     when month = 11 then "november"
     
     else "december"
+  
   end as months_name
 
 FROM `reflecting-poet-391612.project.avocado` 
