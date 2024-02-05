@@ -16,16 +16,27 @@ SELECT
   avg(AveragePrice) AveragePrice,
   case
     when month = 1 then "january"
+    
     when month = 2 then "febuary"
+    
     when month = 3 then "March"
+    
     when month = 4 then "april"
+    
     when month = 5 then "may"
+    
     when month = 6 then "june"
+    
     when month = 7 then "july"
+    
     when month = 8 then "august"
+    
     when month = 9 then "september"
+    
     when month = 10 then "october"
+    
     when month = 11 then "november"
+    
     else "december"
   end as months_name
 
@@ -44,16 +55,27 @@ SELECT
   sum(small_bags +large_bags + XLarge_Bags) as sales_per_month,
   case
     when month = 1 then "january"
+    
     when month = 2 then "febuary"
+    
     when month = 3 then "March"
+    
     when month = 4 then "april"
+    
     when month = 5 then "may"
+    
     when month = 6 then "june"
+    
     when month = 7 then "july"
+    
     when month = 8 then "august"
+    
     when month = 9 then "september"
+    
     when month = 10 then "october"
+    
     when month = 11 then "november"
+    
     else "december"
   end as months_name
 
